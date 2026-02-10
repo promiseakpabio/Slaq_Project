@@ -1,0 +1,309 @@
+   @font-face {
+    font-family: 'Michroma';
+    src: url('./fonts/Michroma/Michroma-Regular.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Michroma';
+}
+
+  body {background: #05010c;
+  color: white;
+  font-family:'michroma',sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  overflow:scroll;
+  background:linear-gradient(deg, #05010c 0%, #1a0a33 40%, #7114E3 100%);
+}
+
+header{
+    width: 70%;
+ 
+}
+
+  .navbar {
+  display:flex;
+  justify-content: space-between;
+  padding: 17px 60px;
+  align-items:center;
+  
+ 
+}
+
+.logo{top:40px;
+width:132px;
+height:40px;
+left: 107px;
+gap: 12px;
+
+}
+
+
+.navbar nav a {
+margin: 0 15px;
+text-decoration: none;
+color: #ccc;
+height: 46px;
+top:32px;
+left: 695px;
+gap: 46px;}
+
+  .btn {
+  background: #6a00ff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.img-cont{position:relative;
+}
+
+.image1{
+width: 272px;
+height: 88px;
+top: 50px;
+left: 50px;
+gap:12px;
+position: absolute;
+border-radius: 20px;
+}
+
+.image2{width: 1080px;
+height:436px;
+top:116px;
+left:98px;
+border:1px;
+border-radius:20px;}
+
+.overlay-text{
+    position:absolute;
+    top: 40%;
+    left: 5%;
+    font: weight 600px;
+    font-size: 40px;
+    font-style: regular;
+    letter-spacing: 0%;
+    line-height: 100%;
+    width: 750px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.rev1{
+    width: 941px;
+    height: 899px;
+    top: 7px;
+    left: 169px;
+    margin-top: 60px;
+}
+
+.easy-pay{
+    width: 1050px;
+    height: 376px;
+    top: 1651px;
+    left: 102px;
+    gap: 17px;
+}
+
+.form{
+    border: 1px dotted #7114E3;
+    width: 1039px;
+    height: 418px;
+    left: 122px;
+    top: 2165px;
+    right: 12px;
+    bottom: 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.waitlist{
+  background: #6a00ff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  width: 150px;
+  position: relative;
+  bottom: 25%;
+  right: 40%;
+}
+
+.sign input{padding:15px;
+width: 700px;
+border:1px dotted #7114E3;
+background:#05010c;
+color: white;
+}
+.sign button{padding: 15px;
+background: #6a00ff;
+color: #ccc;
+width: 700px;}
+
+footer{
+  border: 1px dotted #7114E3;
+  width: 1088px;
+  left: 46px;
+  top: 2694px;
+  height: 196px;
+  padding-left: 46px;
+  padding-right: 46px;
+  border-left: hidden;
+  border-right: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 80px;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+.telegram{
+  background: white;
+  color: #05010c;
+  padding: 5px 18px;
+  width: 130px;
+  border-radius: 4px;
+  
+}
+
+.twitter{
+  background: white;
+  color: #05010c;
+  padding: 5px 18px;
+  width: 130px;
+border-radius: 4px;}
+
+@media (max-width: 768px) {
+
+  body {
+    align-items: stretch;
+    gap: 20px;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .navbar {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .logo {
+    width: 35vw;         
+    height: auto;
+  }
+
+  .hero {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .img-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    min-height: auto;
+  }
+
+  .image1 {
+    position: static;      
+    width: 45vw;
+    height: auto;
+  }
+
+  .image2 {
+    position: static;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .overlay-text {
+    position: static;      
+    width: 90%;
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 1.3;
+    margin-top: 10px;
+  }
+
+  main {
+    gap: 40px;
+  }
+
+  .rev1 {
+    width: 90vw;          
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .easy-pay {
+    width: 90vw;          
+    height: auto;
+  }
+
+  .form {
+    width: 90vw;          
+    height: auto;
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .waitlist {
+    position: static;
+    width: 60%;
+  }
+
+  .sign input,
+  .sign button {
+    width: 100%;          
+  }
+
+  footer {
+    width: 90vw;          
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px 0;
+  }
+
+  .telegram,
+  .twitter {
+    width: auto;
+  }
+}
+
